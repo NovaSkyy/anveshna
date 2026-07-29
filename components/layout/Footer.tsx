@@ -164,3 +164,46 @@ export function Footer() {
                 <FooterBaseContainer aria-label="Sub Footer" $isSub={true}>
                     <Text as="p" $isSub={true}>
                         &copy; {year}{" "} 
+                        <a
+                            href="https://github.com/devxoshakya/anveshna"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Anveshna.
+                        </a>{" "}
+                        | Website Made by{" "}
+                        <strong>
+                            <a
+                                href="https://github.com/devxoshakya"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Dev
+                            </a>
+                            {" and "}
+                            <a
+                                href="https://github.com/akshitasrivastava20"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Akshita
+                            </a>
+                        </strong>
+                    </Text>
+                    <nav aria-label="Repository Link">
+                        <SocialIconsWrapper>
+                            <ShareButton
+                                href="https://github.com/devxoshakya/anveshna"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub Repository"
+                            >
+                                <FaGithub aria-hidden="true" />
+                            </ShareButton>
+                        </SocialIconsWrapper>
+                    </nav>
+                </FooterBaseContainer>
+            </footer>
+        </PageWrapper>
+    );
+}
